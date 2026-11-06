@@ -1,0 +1,260 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playas sin Sargazo · Cancún Live | SAiMON VISION</title>
+<meta name="description" content="Cámaras en vivo de hoteles frente al mar en Cancún, verificadas por IA cada 15 minutos. Solo ves playas sin sargazo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="depth-bg">
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb--b float-a" style="width:1000px;height:1000px;right:-320px;top:820px"></div>
+    <div class="orb orb--t float-b" style="width:1100px;height:1100px;left:-420px;top:1500px"></div>
+    <div class="orb orb--t float-c" style="width:900px;height:900px;right:-300px;top:2350px"></div>
+    <div class="orb orb--b float-b" style="width:1000px;height:1000px;left:-360px;top:2900px"></div>
+    <div class="orb orb--t float-a" style="width:900px;height:900px;right:-260px;top:3350px"></div>
+  </div>
+
+  <header class="site-header site-header--overlay">
+    <nav class="site-nav" aria-label="Secciones">
+      <a href="#playas" aria-current="page">Playas</a>
+      <a href="#costa">La costa</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="playa.html?hotel=azul">Cámara</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="hoteles.html#formulario">Para hoteles</a>
+    </nav>
+    <div class="site-header__actions">
+      <button type="button" class="icon-btn" data-info-open aria-haspopup="dialog" aria-controls="info-dialog" aria-label="Información del sitio">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><line x1="12" y1="11" x2="12" y2="16"/><line x1="12" y1="8" x2="12" y2="8"/></svg>
+      </button>
+      <div class="pill"><span class="live-dot"></span><b>EN VIVO</b><span class="muted">· Última lectura 10:45 h</span></div>
+      <a href="hoteles.html#formulario" class="btn btn--light btn--compact">AFILIAR MI HOTEL ↗</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="playas">
+    <video class="hero__video" src="assets/video/hero-olas.mp4" poster="assets/img/hero-poster.jpg" autoplay muted loop playsinline aria-hidden="true"></video>
+    <div class="hero__veil"></div>
+    <div class="hero__veil-top"></div>
+    <div class="hero__veil-bottom"></div>
+
+    <div class="hero__center">
+      <h1 class="hero__title">Busca tu playa sin sargazo</h1>
+      <p class="hero__lead">Cámaras de hoteles frente al mar, verificadas por IA cada 15 minutos. Solo ves playas limpias.</p>
+      <div class="kpis">
+        <div class="kpi"><span class="kpi__value" data-count="9">9</span><span class="kpi__label">PLAYAS LIMPIAS</span></div>
+        <div class="kpi"><span class="kpi__value" data-count="5">5</span><span class="kpi__label">ZONAS</span></div>
+        <div class="kpi"><span class="kpi__value" data-count-time="10:45">10:45</span><span class="kpi__label">ÚLTIMA LECTURA</span></div>
+      </div>
+      <label class="search hero__search">
+        <span class="sr-only">Buscar playa, hotel o zona</span>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="search" data-search="cards" placeholder="Busca un hotel o zona: Punta Nizuc, Azul Caribe…" autocomplete="off">
+      </label>
+      <span class="hero__count" data-search-count aria-live="polite">7 playas sin sargazo ahora</span>
+    </div>
+
+    <div class="hero__rail">
+      <p class="empty-state empty-state--rail" data-search-empty hidden>No encontramos playas limpias con “<span data-search-query></span>”. Prueba con otro hotel o zona.</p>
+      <div class="carousel" data-carousel>
+        <button type="button" class="carousel__btn carousel__btn--prev" data-carousel-prev aria-label="Playas anteriores">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg>
+        </button>
+        <div class="rail" data-carousel-track tabindex="0">
+        <a href="playa.html?hotel=azul" class="cam-card" data-card data-name="Hotel Azul Caribe" data-zone="Zona Hotelera Norte">
+          <div class="cam-card__media"><video src="assets/video/cam-01.mp4" poster="assets/img/playa-01.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-01</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Hotel Azul Caribe</span><span class="cam-card__zone">Zona Hotelera Norte</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=turquesa" class="cam-card" data-card data-name="Playa Turquesa Resort" data-zone="Zona Hotelera Norte">
+          <div class="cam-card__media"><video src="assets/video/cam-02.mp4" poster="assets/img/playa-02.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-02</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Playa Turquesa Resort</span><span class="cam-card__zone">Zona Hotelera Norte</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=brisa" class="cam-card" data-card data-name="Brisa Maya Resort" data-zone="Punta Cancún">
+          <div class="cam-card__media"><video src="assets/video/cam-03.mp4" poster="assets/img/playa-04.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-03</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Brisa Maya Resort</span><span class="cam-card__zone">Punta Cancún</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=coral" class="cam-card" data-card data-name="Casa Coral Beach" data-zone="Zona Hotelera Sur">
+          <div class="cam-card__media"><video src="assets/video/cam-01.mp4" poster="assets/img/playa-06.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-04</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Casa Coral Beach</span><span class="cam-card__zone">Zona Hotelera Sur</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=sol" class="cam-card" data-card data-name="Sol del Mar Suites" data-zone="Zona Hotelera Sur">
+          <div class="cam-card__media"><video src="assets/video/cam-02.mp4" poster="assets/img/playa-05.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-05</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Sol del Mar Suites</span><span class="cam-card__zone">Zona Hotelera Sur</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=nacar" class="cam-card" data-card data-name="Costa Nácar" data-zone="Punta Nizuc">
+          <div class="cam-card__media"><video src="assets/video/cam-03.mp4" poster="assets/img/playa-03.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-06</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Costa Nácar</span><span class="cam-card__zone">Punta Nizuc</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=esmeralda" class="cam-card" data-card data-name="Punta Esmeralda" data-zone="Isla Blanca">
+          <div class="cam-card__media"><video src="assets/video/cam-01.mp4" poster="assets/img/playa-07.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-07</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Punta Esmeralda</span><span class="cam-card__zone">Isla Blanca</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=bahia" class="cam-card" data-card data-name="Bahía Serena" data-zone="Punta Cancún">
+          <div class="cam-card__media"><video src="assets/video/cam-02.mp4" poster="assets/img/playa-02.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-08</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Bahía Serena</span><span class="cam-card__zone">Punta Cancún</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        <a href="playa.html?hotel=palma" class="cam-card" data-card data-name="Palma Real" data-zone="Isla Blanca">
+          <div class="cam-card__media"><video src="assets/video/cam-03.mp4" poster="assets/img/playa-05.jpg" autoplay muted loop playsinline aria-hidden="true"></video><span class="cam-tag">CAM-09</span></div>
+          <div class="cam-card__body"><span class="cam-card__name">Palma Real</span><span class="cam-card__zone">Isla Blanca</span></div>
+          <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>Lectura 10:45 h</span></div>
+        </a>
+        </div>
+        <button type="button" class="carousel__btn carousel__btn--next" data-carousel-next aria-label="Playas siguientes">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LA COSTA ===== -->
+  <section class="coast" id="costa">
+    <div class="container coast__grid">
+      <div class="coast__copy">
+        <p class="eyebrow">01 — La costa</p>
+        <h2 class="display">La costa<span class="dot-red">.</span></h2>
+        <p>De Isla Blanca a Punta Nizuc. Cada pin es una cámara de hotel cuya lectura más reciente no detectó sargazo.</p>
+        <div class="legend"><span><i class="legend__ok"></i>Sin sargazo</span><span><i class="legend__warn"></i>En revisión</span></div>
+        <a href="mapa.html" class="btn btn--ghost btn--start">ABRIR MAPA EN VIVO ↗</a>
+      </div>
+      <div class="coast__map">
+        <img src="assets/svg/mapa-costa.svg" alt="Mapa 3D estilizado de la costa de Cancún" width="1240" height="760" loading="eager">
+        <a href="playa.html?hotel=esmeralda" class="map-pin map-pin--l" style="left:51.6%;top:29.9%" aria-label="Punta Esmeralda, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Punta Esmeralda</span></a>
+        <a href="playa.html?hotel=azul" class="map-pin map-pin--l" style="left:52.9%;top:47.9%" aria-label="Azul Caribe, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Azul Caribe</span></a>
+        <a href="playa.html?hotel=turquesa" class="map-pin map-pin--u" style="left:55.8%;top:49.1%" aria-label="Playa Turquesa, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Playa Turquesa</span></a>
+        <a href="playa.html?hotel=brisa" class="map-pin map-pin--r" style="left:61.6%;top:52.6%" aria-label="Brisa Maya, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Brisa Maya</span></a>
+        <a href="playa.html?hotel=coral" class="map-pin map-pin--r" style="left:57.6%;top:61.9%" aria-label="Casa Coral, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Casa Coral</span></a>
+        <a href="playa.html?hotel=sol" class="map-pin map-pin--r" style="left:54.5%;top:68.5%" aria-label="Sol del Mar, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Sol del Mar</span></a>
+        <a href="playa.html?hotel=nacar" class="map-pin map-pin--l" style="left:46.8%;top:76%" aria-label="Costa Nácar, sin sargazo"><span class="map-pin__dot"></span><span class="map-pin__label">Costa Nácar</span></a>
+        <a href="playa-no-disponible.html" class="map-warn" style="left:59.6%;top:57.5%" aria-label="Cámara en revisión"></a>
+        <a href="playa-no-disponible.html" class="map-warn" style="left:52.4%;top:72.9%" aria-label="Cámara en revisión"></a>
+        <span class="map-label" style="left:4%;top:6%;color:var(--text-2)">MAR CARIBE →</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO FUNCIONA ===== -->
+  <section class="how" id="como">
+    <div class="container">
+      <div class="how__head">
+        <div><p class="eyebrow">02 — Cómo funciona</p><h2 class="display">Del lente a tu pantalla<span class="dot-red">.</span></h2></div>
+        <p>Si la IA detecta sargazo, la cámara se oculta hasta la siguiente lectura limpia. Nunca verás una playa con sargazo.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8h3l2-3h8l2 3h3v11H3z"/><circle cx="12" cy="13" r="4"/></svg></div>
+          <span class="step__num">01</span><h3>Captura</h3>
+          <p>Las cámaras de los hoteles frente al mar transmiten su vista de la playa.</p>
+        </div>
+        <div class="step">
+          <div class="step__icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></svg></div>
+          <span class="step__num">02</span><h3>Análisis IA cada 15 min</h3>
+          <p>SAiMON VISION revisa cada imagen y estima si hay sargazo en la arena o en el agua.</p>
+        </div>
+        <div class="step">
+          <div class="step__icon step__icon--outline"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10"/></svg></div>
+          <span class="step__num">03</span><h3>Solo playas limpias</h3>
+          <p>Se publican únicamente las cámaras cuya lectura más reciente no detecta sargazo.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOTELES PARTICIPANTES ===== -->
+  <section class="logos">
+    <div class="container">
+      <p class="eyebrow">Hoteles participantes</p>
+      <div class="logos__grid">
+        <a class="logo-tile logo-tile--azul" href="playa.html?hotel=azul">AZUL CARIBE</a>
+        <a class="logo-tile logo-tile--turquesa" href="playa.html?hotel=turquesa">Playa Turquesa</a>
+        <a class="logo-tile logo-tile--brisa" href="playa.html?hotel=brisa">BRISA·MAYA</a>
+        <a class="logo-tile logo-tile--coral" href="playa.html?hotel=coral">Casa Coral</a>
+        <a class="logo-tile logo-tile--sol" href="playa.html?hotel=sol">SOL DEL MAR</a>
+        <a class="logo-tile logo-tile--nacar" href="playa.html?hotel=nacar">Costa Nácar</a>
+        <a class="logo-tile logo-tile--esmeralda" href="playa.html?hotel=esmeralda">PUNTA ESMERALDA</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BANDA PARA HOTELES ===== -->
+  <section class="section">
+    <div class="container band">
+      <img class="band__img" src="assets/img/playa-05.jpg" alt="" loading="lazy">
+      <div class="band__veil"></div>
+      <div class="band__inner">
+        <div><p class="eyebrow">Para hoteles</p><h2>¿Tu hotel tiene playa limpia? Muéstralo al mundo<span class="dot-red">.</span></h2></div>
+        <div class="benefits">
+          <div class="benefit"><strong>Visibilidad</strong><span>Aparece ante viajeros que buscan dónde pasar el día.</span></div>
+          <div class="benefit"><strong>Prueba en vivo</strong><span>Tu playa, verificada por IA cada 15 minutos.</span></div>
+          <div class="benefit"><strong>Tráfico directo</strong><span>Cada ficha enlaza a tu sitio y a cómo llegar.</span></div>
+        </div>
+        <a href="hoteles.html#formulario" class="btn btn--light btn--lg">AFILIAR MI HOTEL ↗</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section" id="preguntas">
+    <div class="container faq__grid">
+      <div class="faq__title"><p class="eyebrow">03 — Preguntas</p><h2 class="display">Dudas<span class="dot-red">.</span></h2></div>
+      <div class="faq__list">
+        <details class="faq__item" open><summary>¿Qué es el sargazo?<span class="faq__icon" aria-hidden="true"></span></summary><p>Es una macroalga que flota en el mar y llega a las costas del Caribe mexicano en ciertas temporadas. Cuando se acumula en la orilla cambia el color del agua y de la arena.</p></details>
+        <details class="faq__item"><summary>¿Cada cuánto se actualiza?<span class="faq__icon" aria-hidden="true"></span></summary><p>Cada 15 minutos. La hora de la última lectura aparece arriba a la derecha y en cada tarjeta de cámara.</p></details>
+        <details class="faq__item"><summary>¿Por qué no aparece mi playa favorita?<span class="faq__icon" aria-hidden="true"></span></summary><p>Puede que su lectura más reciente haya detectado sargazo, que la cámara esté en revisión o que el hotel aún no participe. Vuelve a revisar después de la siguiente lectura.</p></details>
+        <details class="faq__item"><summary>¿La lectura sustituye ver la playa en persona?<span class="faq__icon" aria-hidden="true"></span></summary><p>No. Las lecturas son automatizadas y orientativas; las condiciones pueden cambiar entre una lectura y otra. Verifica siempre en sitio.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="site-footer__top">
+        <div>
+          <span class="logo__text"><b>SAiMON</b> VISION <span class="muted">· Seguritech</span></span>
+          <p class="site-footer__claim">Playas sin sargazo<span class="dot-red">.</span></p>
+        </div>
+        <nav aria-label="Pie de página">
+          <a href="mapa.html">Mapa en vivo</a>
+          <a href="hoteles.html#formulario">Para hoteles</a>
+          <a href="aviso.html">Aviso de privacidad</a>
+          <a href="terminos.html">Términos</a>
+        </nav>
+      </div>
+      <div class="site-footer__bottom">
+        <span>Lecturas automatizadas. Verifica las condiciones en sitio.</span>
+        <span>© 2026 SAiMON VISION · Seguritech</span>
+      </div>
+    </div>
+  </footer>
+</div>
+<dialog class="info-dialog" id="info-dialog" data-info-dialog aria-labelledby="info-title">
+  <p class="eyebrow">Cómo leer el sitio</p>
+  <h2 id="info-title">Solo playas limpias<span class="dot-red">.</span></h2>
+  <p>Cada cámara se revisa sola. Si la lectura detecta sargazo, esa playa deja de mostrarse hasta la siguiente hora limpia.</p>
+  <ul>
+    <li><strong>En vivo.</strong> La hora de la píldora es la última lectura. La siguiente llega 15 minutos después.</li>
+    <li><strong>Sin sargazo.</strong> La playa está publicada porque la lectura más reciente salió limpia.</li>
+    <li><strong>En revisión.</strong> La cámara no se publica: o se está calibrando, o la lectura no pudo confirmar la orilla.</li>
+  </ul>
+  <p>Las lecturas orientan la visita. El estado de la playa puede cambiar antes de que llegues.</p>
+  <form method="dialog"><button type="submit" class="btn btn--light btn--quiet" data-info-close>Entendido</button></form>
+</dialog>
+<script src="js/main.js"></script>
+</body>
+</html>

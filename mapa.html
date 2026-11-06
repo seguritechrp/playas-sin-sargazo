@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mapa en vivo | Playas sin Sargazo · Cancún Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="depth-bg depth-bg--diagonal viewer viewer--map">
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb--t float-b" style="width:900px;height:900px;left:-420px;top:380px"></div>
+    <div class="orb orb--b float-a" style="width:1000px;height:1000px;right:-300px;top:-400px"></div>
+  </div>
+
+  <aside class="viewer__panel viewer__panel--wide">
+    <a href="index.html" class="back-link glass">← Volver a playas</a>
+    <div class="map-brand">
+      <a href="index.html" class="logo logo--sm" aria-label="SAiMON VISION, inicio">
+        <svg width="30" height="30" viewBox="0 0 34 34" aria-hidden="true"><circle cx="17" cy="17" r="15" fill="none" stroke="#FFFFFF" stroke-width="2"/><circle cx="17" cy="17" r="6" fill="#FFFFFF"/><circle cx="20" cy="14" r="2" fill="#DB2C34"/></svg>
+        <span class="logo__text"><b>SAiMON</b> VISION</span>
+      </a>
+      <span class="live-mini"><span class="live-dot"></span>EN VIVO · 10:45</span>
+    </div>
+    <div>
+      <h1 class="panel-title panel-title--map">Mapa<span class="dot-red">.</span></h1>
+      <p class="map-count" data-map-count aria-live="polite"><b>9</b> playas sin sargazo</p>
+    </div>
+    <label class="search search--sm">
+      <span class="sr-only">Buscar hotel o zona</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+      <input type="search" data-search="map" placeholder="Busca un hotel o zona" autocomplete="off">
+    </label>
+    <div class="place-list">
+      <button type="button" class="place-row" data-place="esmeralda" data-name="Punta Esmeralda" data-zone="Isla Blanca" data-img="assets/img/playa-07.jpg"><img src="assets/img/playa-07.jpg" alt=""><span class="place-row__text"><b>Punta Esmeralda</b><small>Isla Blanca</small></span><time>10:45</time></button>
+      <button type="button" class="place-row is-active" data-place="azul" data-name="Hotel Azul Caribe" data-zone="Zona Hotelera Norte" data-img="assets/img/playa-01.jpg"><img src="assets/img/playa-01.jpg" alt=""><span class="place-row__text"><b>Hotel Azul Caribe</b><small>Zona Hotelera Norte</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="turquesa" data-name="Playa Turquesa Resort" data-zone="Zona Hotelera Norte" data-img="assets/img/playa-02.jpg"><img src="assets/img/playa-02.jpg" alt=""><span class="place-row__text"><b>Playa Turquesa Resort</b><small>Zona Hotelera Norte</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="brisa" data-name="Brisa Maya Resort" data-zone="Punta Cancún" data-img="assets/img/playa-04.jpg"><img src="assets/img/playa-04.jpg" alt=""><span class="place-row__text"><b>Brisa Maya Resort</b><small>Punta Cancún</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="coral" data-name="Casa Coral Beach" data-zone="Zona Hotelera Sur" data-img="assets/img/playa-06.jpg"><img src="assets/img/playa-06.jpg" alt=""><span class="place-row__text"><b>Casa Coral Beach</b><small>Zona Hotelera Sur</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="sol" data-name="Sol del Mar Suites" data-zone="Zona Hotelera Sur" data-img="assets/img/playa-05.jpg"><img src="assets/img/playa-05.jpg" alt=""><span class="place-row__text"><b>Sol del Mar Suites</b><small>Zona Hotelera Sur</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="nacar" data-name="Costa Nácar" data-zone="Punta Nizuc" data-img="assets/img/playa-03.jpg"><img src="assets/img/playa-03.jpg" alt=""><span class="place-row__text"><b>Costa Nácar</b><small>Punta Nizuc</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="bahia" data-name="Bahía Serena" data-zone="Punta Cancún" data-img="assets/img/playa-02.jpg"><img src="assets/img/playa-02.jpg" alt=""><span class="place-row__text"><b>Bahía Serena</b><small>Punta Cancún</small></span><time>10:45</time></button>
+      <button type="button" class="place-row" data-place="palma" data-name="Palma Real" data-zone="Isla Blanca" data-img="assets/img/playa-05.jpg"><img src="assets/img/playa-05.jpg" alt=""><span class="place-row__text"><b>Palma Real</b><small>Isla Blanca</small></span><time>10:45</time></button>
+      <p class="empty-state empty-state--sm" data-map-empty hidden>Sin resultados para esa búsqueda.</p>
+    </div>
+  </aside>
+
+  <main class="viewer__main glass map-stage">
+    <iframe class="map-frame" data-map-frame title="Mapa de la costa de Cancún" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen src="https://maps.google.com/maps?q=Zona%20Hotelera%20Canc%C3%BAn&hl=es&z=12&output=embed"></iframe>
+
+    <div class="map-popup glass-dark" data-popup>
+      <div class="map-popup__media"><img data-popup-img src="assets/img/playa-01.jpg" alt=""><span class="badge-live"><span class="live-dot live-dot--sm"></span>EN VIVO</span></div>
+      <div class="map-popup__body"><b data-popup-name>Hotel Azul Caribe</b><span data-popup-zone class="muted map-popup__zone">Zona Hotelera Norte</span></div>
+      <div class="map-popup__foot"><span class="chip-ok chip-ok--sm">Sin sargazo</span><a href="playa.html?hotel=azul" class="btn btn--light btn--popup">Ver cámara</a></div>
+    </div>
+
+    <div class="map-legend glass-dark legend"><span><i class="legend__ok"></i>Sin sargazo</span><span><i class="legend__warn"></i>En revisión · sin video</span></div>
+    <span class="map-next glass-dark">Próxima lectura 11:00 h</span>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Azul Caribe · Cámara en vivo | Playas sin Sargazo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="depth-bg depth-bg--diagonal viewer">
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb--t float-b" style="width:900px;height:900px;left:-420px;top:380px"></div>
+    <div class="orb orb--b float-a" style="width:800px;height:800px;left:-200px;top:-380px"></div>
+  </div>
+
+  <!-- ===== PANEL IZQUIERDO ===== -->
+  <aside class="viewer__panel">
+    <a href="index.html" class="back-link glass">← Volver a playas</a>
+
+    <div>
+      <h1 class="panel-title">Azul Caribe<span class="dot-red">.</span></h1>
+      <p class="panel-sub">Zona Hotelera Norte · Cancún</p>
+    </div>
+
+    <div class="hotel-card glass">
+      <p class="label">EL HOTEL</p>
+      <div class="hotel-card__id">
+        <span class="hotel-card__logo">AC</span>
+        <span class="hotel-card__who"><b>Hotel Azul Caribe</b><span class="muted" aria-label="5 estrellas">★★★★★ · 5 estrellas</span></span>
+      </div>
+      <div class="hotel-card__info">
+        <span>Blvd. Kukulcán km 9.5, Zona Hotelera, Cancún, Q. Roo</span>
+        <a class="link-light" href="tel:+529988812400">+52 998 881 2400</a>
+        <a class="link-light" href="sitio-hotel.html">www.azulcaribe.mx</a>
+      </div>
+      <div class="mini-map">
+        <iframe class="mini-map__frame" data-hotel-map title="Mapa de Hotel Azul Caribe" src="https://maps.google.com/maps?q=Blvd.%20Kukulc%C3%A1n%20km%209.5%2C%20Zona%20Hotelera%2C%20Canc%C3%BAn&amp;hl=es&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="hotel-card__actions">
+        <a href="sitio-hotel.html" class="btn btn--light btn--grow">Visitar sitio del hotel →</a>
+      </div>
+    </div>
+
+    <div>
+      <div class="metrics">
+        <div class="metric"><span class="metric__value">0%</span><span class="metric__label">Sargazo detectado</span></div>
+        <div class="metric"><span class="metric__value">96%</span><span class="metric__label">Confianza IA</span></div>
+        <div class="metric"><span class="metric__value">6 h</span><span class="metric__label">Limpia consecutiva</span></div>
+        <div class="metric"><span class="metric__value">10:45</span><span class="metric__label">Última lectura · próxima 11:00</span></div>
+      </div>
+      <div class="status-legend"><span><i class="is-ok"></i>Sin sargazo</span><span><i class="is-warn"></i>En revisión</span></div>
+    </div>
+
+    <!-- Lecturas del día: solo en móvil (en escritorio van sobre el streaming). Ocultas, no eliminadas. -->
+    <div class="glass readings only-mobile is-concealed">
+      <div class="readings__head"><span class="label">LECTURAS DE HOY</span><span class="chip-ok chip-ok--sm">100% limpia</span></div>
+      <div class="readings__scroll">
+        <div class="timeline">
+          <div class="timeline__track"></div><div class="timeline__progress"></div>
+          <div class="timeline__dots" data-timeline-dots data-done="19"></div>
+          <div class="timeline__now"></div>
+          <img class="timeline__thumb" data-cam-thumb src="assets/img/playa-06.jpg" alt="06:00" style="left:0;transform:none">
+          <img class="timeline__thumb" data-cam-thumb src="assets/img/playa-06.jpg" alt="08:00" style="left:16.7%">
+          <img class="timeline__thumb" data-cam-thumb src="assets/img/playa-06.jpg" alt="09:30" style="left:29.2%">
+          <img class="timeline__thumb timeline__thumb--now" data-cam-thumb src="assets/img/playa-06.jpg" alt="10:45" style="left:39.6%">
+          <div class="timeline__hours"><span>06:00</span><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span></div>
+        </div>
+      </div>
+      <div class="inline-actions">
+        <button type="button" class="btn btn--light btn--play btn--fill" data-play="timelapse">▶ Reproducir timelapse</button>
+        <span class="time-readout">10:45 <span class="muted">/ 18:00</span></span>
+      </div>
+    </div>
+
+  </aside>
+
+  <!-- ===== STREAMING ===== -->
+  <main class="viewer__main stream">
+    <!-- Sustituir la imagen por el reproductor del streaming (HLS/WebRTC) de la cámara seleccionada -->
+    <video class="stream__img" data-stream-img src="assets/video/cam-01.mp4" poster="assets/img/camara-01.jpg" autoplay muted loop playsinline aria-label="Streaming en vivo: Playa principal"></video>
+    <div class="stream__veil"></div>
+
+    <div class="stream__tags">
+      <span class="tag glass-dark"><span class="live-dot"></span><span data-mode-badge>EN VIVO</span></span>
+      <span class="tag glass-dark" data-cam-label>CAM-01</span>
+      <span class="chip-ok">Sin sargazo</span>
+    </div>
+
+    <button type="button" class="btn btn--light btn--lg stream__details" data-drawer-open>Detalles <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+
+    <div class="timeline-bar glass-dark is-concealed">
+      <div class="timeline-bar__top">
+        <button type="button" class="btn btn--light btn--play" data-play="timelapse">
+          <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 1l9 5-9 5z" fill="currentColor"/></svg>Reproducir timelapse
+        </button>
+        <button type="button" class="btn-outline-round btn-outline-round--icon" data-play="live" aria-label="Reiniciar"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12a8 8 0 1 0 3-6.2"/><path d="M4 4v4h4"/></svg></button>
+        <span class="muted timeline-note">Hoy desde 06:00</span>
+        <span class="spacer"></span>
+        <button type="button" class="btn-outline-round" data-drawer-open>Detalles <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+      </div>
+      <div class="timeline-bar__row is-concealed">
+        <span class="time-readout">10:45 <span class="muted">/ 18:00</span></span>
+        <div class="timeline">
+          <div class="timeline__track"></div><div class="timeline__progress"></div>
+          <div class="timeline__dots" data-timeline-dots data-done="19"></div>
+          <div class="timeline__now"></div>
+          <img class="timeline__thumb" data-cam-thumb src="assets/img/playa-06.jpg" alt="06:00" style="left:0;transform:translateX(-4px)">
+          <img class="timeline__thumb" data-cam-thumb src="assets/img/playa-06.jpg" alt="08:00" style="left:16.7%">
+          <img class="timeline__thumb" data-cam-thumb src="assets/img/playa-06.jpg" alt="09:30" style="left:29.2%">
+          <img class="timeline__thumb timeline__thumb--now" data-cam-thumb src="assets/img/playa-06.jpg" alt="10:45" style="left:39.6%">
+          <div class="timeline__hours"><span>06:00</span><span>09:00</span><span>12:00</span><span>15:00</span><span>18:00</span></div>
+        </div>
+        <span class="chip-ok">100% limpia hoy</span>
+      </div>
+    </div>
+
+    <!-- Panel de detalles -->
+    <div class="drawer-backdrop" data-drawer-backdrop hidden></div>
+    <div class="drawer glass-dark" data-drawer role="dialog" aria-modal="true" aria-label="Detalles del hotel" hidden>
+      <div class="drawer__head">
+        <span class="label">DETALLES DEL HOTEL</span>
+        <button type="button" class="btn-outline-round btn-outline-round--icon" data-drawer-close aria-label="Cerrar detalles"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+      </div>
+      <h2 class="drawer__title">Azul Caribe<span class="dot-red">.</span></h2>
+      <div class="drawer__gallery">
+        <img src="assets/img/playa-06.jpg" alt="Playa del hotel">
+        <img src="assets/img/playa-02.jpg" alt="Vista norte">
+        <img src="assets/img/playa-04.jpg" alt="Muelle">
+      </div>
+      <p class="muted drawer__copy">Hotel frente al mar en la Zona Hotelera Norte. Habitaciones con vista al Caribe, club de playa y una franja de arena amplia. La cámara principal encuadra la orilla, que es la zona que revisa SAiMON VISION.</p>
+      <div class="stack">
+        <span class="label">SERVICIOS DE PLAYA</span>
+        <div class="services">
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 15h13l3-5M5 15v4M16 15v4M3 15l2-4h6"/></svg>Camastros</div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 21V4M5 4h12l-3 4 3 4H5"/></svg>Bandera</div>
+          <div class="service"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="3.5"/><path d="M6.3 6.3l3.2 3.2M17.7 6.3l-3.2 3.2M6.3 17.7l3.2-3.2M17.7 17.7l-3.2-3.2"/></svg>Salvavidas</div>
+        </div>
+      </div>
+      <div class="stack">
+        <span class="label">UBICACIÓN</span>
+        <div class="mini-map mini-map--lg">
+          <iframe class="mini-map__frame" data-hotel-map title="Mapa de Hotel Azul Caribe" src="https://maps.google.com/maps?q=Blvd.%20Kukulc%C3%A1n%20km%209.5%2C%20Zona%20Hotelera%2C%20Canc%C3%BAn&amp;hl=es&amp;z=14&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <span class="muted address">Blvd. Kukulcán km 9.5, Zona Hotelera, Cancún, Q. Roo</span>
+      </div>
+      <a href="sitio-hotel.html" class="btn btn--light btn--quiet">Visitar sitio del hotel →</a>
+    </div>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>

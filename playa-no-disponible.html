@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hotel Azul Caribe · No disponible ahora | Playas sin Sargazo</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="depth-bg depth-bg--diagonal viewer viewer--panel-first">
+  <div class="orbs" aria-hidden="true">
+    <div class="orb orb--t float-b" style="width:900px;height:900px;left:-420px;top:380px"></div>
+    <div class="orb orb--a float-a" style="width:900px;height:900px;left:520px;top:-360px"></div>
+  </div>
+
+  <aside class="viewer__panel">
+    <a href="index.html" class="back-link glass">← Volver a playas</a>
+    <nav class="site-nav" aria-label="Secciones">
+      <a href="index.html">Playas</a>
+      <a href="mapa.html">Mapa</a>
+      <a href="playa.html?hotel=azul">Cámara</a>
+      <a href="hoteles.html#formulario">Para hoteles</a>
+    </nav>
+    <div>
+      <h1 class="panel-title">Azul Caribe<span class="dot-red">.</span></h1>
+      <p class="panel-sub">Zona Hotelera Norte · Cancún</p>
+      <span class="chip-warn">En revisión</span>
+    </div>
+    <div>
+      <p class="label">CÁMARAS DEL HOTEL</p>
+      <div class="cam-list cam-list--disabled">
+        <div class="cam-row"><span class="cam-row__text"><span class="cam-row__name"><b>01</b>Playa principal</span><span class="cam-row__sub">Oculta hasta la siguiente lectura</span></span></div>
+        <div class="cam-row"><span class="cam-row__text"><span class="cam-row__name"><b>02</b>Vista norte</span><span class="cam-row__sub">Oculta hasta la siguiente lectura</span></span></div>
+        <div class="cam-row"><span class="cam-row__text"><span class="cam-row__name"><b>03</b>Muelle</span><span class="cam-row__sub">Oculta hasta la siguiente lectura</span></span></div>
+      </div>
+    </div>
+    <div class="metrics">
+      <div class="metric"><span class="metric__value">10:45</span><span class="metric__label">Última lectura</span></div>
+      <div class="metric"><span class="metric__value">11:00</span><span class="metric__label">Próxima lectura</span></div>
+    </div>
+    <div class="hotel-card glass">
+      <p class="label">EL HOTEL</p>
+      <b class="hotel-card__name">Hotel Azul Caribe</b>
+      <div class="hotel-card__info"><span>Blvd. Kukulcán km 9.5, Zona Hotelera, Cancún, Q. Roo</span><a class="link-light" href="sitio-hotel.html">Visitar sitio del hotel →</a></div>
+    </div>
+  </aside>
+
+  <main class="viewer__main glass unavailable">
+    <div class="unavailable__head">
+      <span class="unavailable__icon"><svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v6"/><path d="M12 16.5v.5"/></svg></span>
+      <h2>Esta playa no está disponible ahora<span class="dot-red">.</span></h2>
+      <p>La lectura de las 10:45 h no pudo confirmar que esté libre de sargazo. Volveremos a revisarla a las 11:00 h. Mientras tanto, estas playas cercanas están limpias:</p>
+    </div>
+    <div class="unavailable__cards">
+      <a href="playa.html?hotel=turquesa" class="cam-card">
+        <div class="cam-card__media"><video src="assets/video/cam-02.mp4" poster="assets/img/playa-02.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div>
+        <div class="cam-card__body"><span class="cam-card__name">Playa Turquesa Resort</span><span class="cam-card__zone">Zona Hotelera Norte</span></div>
+        <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>10:45 h</span></div>
+      </a>
+      <a href="playa.html?hotel=brisa" class="cam-card">
+        <div class="cam-card__media"><video src="assets/video/cam-03.mp4" poster="assets/img/playa-04.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div>
+        <div class="cam-card__body"><span class="cam-card__name">Brisa Maya Resort</span><span class="cam-card__zone">Punta Cancún</span></div>
+        <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>10:45 h</span></div>
+      </a>
+      <a href="playa.html?hotel=coral" class="cam-card">
+        <div class="cam-card__media"><video src="assets/video/cam-01.mp4" poster="assets/img/playa-05.jpg" autoplay muted loop playsinline aria-hidden="true"></video></div>
+        <div class="cam-card__body"><span class="cam-card__name">Casa Coral Beach</span><span class="cam-card__zone">Zona Hotelera Sur</span></div>
+        <div class="cam-card__foot"><span class="chip-ok">Sin sargazo</span><span>10:45 h</span></div>
+      </a>
+    </div>
+    <a href="index.html" class="link-strong">Ver todas las playas limpias →</a>
+  </main>
+</div>
+<script src="js/main.js"></script>
+</body>
+</html>
